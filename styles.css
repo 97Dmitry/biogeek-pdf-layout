@@ -67,6 +67,8 @@ body {
     max-width: 595px;
     max-height: 842px;
     overflow: hidden;
+
+    background-color: #FDFDFD;
 }
 
 thead {
@@ -95,7 +97,10 @@ table {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     padding: 0 24px;
+    height: 100%;
 }
 
 
@@ -128,13 +133,14 @@ table {
     color: #262626;
 }
 
+.card {
+    padding: 20px 16px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 52px #F3F3F3;
+}
+
 .user-card {
     width: 324px;
-    padding: 20px 16px;
-
-    background: #FFFFFF;
-
-    box-shadow: 0 8px 52px #F3F3F3;
     border-radius: 24px;
 }
 
@@ -227,7 +233,7 @@ table {
     bottom: -8.55%;
 }
 
-.table-page-title {
+.page-title {
     margin-bottom: 20px;
 
     font-style: normal;
@@ -248,7 +254,7 @@ table {
     margin-bottom: 0;
 }
 
-.table-description__point {
+.text-with-point {
     position: relative;
 
     max-width: 450px;
@@ -262,7 +268,7 @@ table {
     padding-left: 12px;
 }
 
-.table-description__point::before {
+.text-with-point::before {
     position: absolute;
     content: "";
     display: flex;
@@ -305,6 +311,10 @@ table {
 
 .table-body {
     background: #DBDBDB;
+}
+
+.table-body tr:nth-child(19) {
+    page-break-after: always;
 }
 
 .table-body .table-body__row:nth-child(odd) {
@@ -362,6 +372,8 @@ table {
 }
 
 .biomarker-title {
+    margin-bottom: 21px;
+
     font-weight: 800;
     font-size: 20px;
     line-height: 24px;
@@ -369,14 +381,237 @@ table {
     color: #262626;
 }
 
+.biomarker-description-title {
+    margin-bottom: 4px;
+
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: -0.01em;
+    color: #262626;
+}
+
+.biomarker-description-card {
+    padding: 16px;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: -0.01em;
+    color: #404040;
+}
+
+.biomarkers-page-card {
+    padding: 20px;
+}
+
+.biomarkers-block {
+    display: flex;
+}
+
+.biomarkers-block__left {
+    flex: 1 0 74%;
+    padding-right: 32px;
+}
+
+.biomarkers-block__right {
+    flex: 1 0 26%;
+}
+
+.biomarkers-block__title {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+    color: #262626;
+}
+
+.biomarkers-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.biomarkers-item__title {
+    flex: 0 1 32%;
+    align-self: center;
+
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: -0.01em;
+    color: #262626;
+}
+
+.biomarkers-scale {
+    position: relative;
+    width: 192px;
+    height: 18px;
+    background-image: url("images/biomarker-item-scale-bg.svg");
+}
+
+.biomarkers-scale__indicator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #FB7B7B;
+    border-radius: 50%;
+}
+
+.biomarkers-scale__value {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #404040;
+}
+
+.biomarkers-norms-value {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: #59CDA4;
+}
+
+.page-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #262626;
+
+    margin-bottom: 10px;
+}
+
+.page-subtitle__label {
+    display: inline-block;
+
+    border: 2px solid #FB7B7B;
+    border-radius: 2px;
+    padding: 4px;
+
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+    color: #FB7B7B;
+
+    margin-bottom: 20px;
+}
+
+.assessment-card {
+    background: #F3F4FF;
+    border-radius: 16px;
+    padding: 20px;
+
+    margin-bottom: 6px;
+}
+
+.assessment-card__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #2B2B38;
+
+    margin-bottom: 6px;
+}
+
+.risk-scale-block {
+    display: flex;
+}
+
+.risk-scale-block__text {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #2B2B38;
+
+    margin-right: 6px;
+}
+
+.risk-scale-block__scale-block {
+    width: 180px;
+    height: 14px;
+
+    margin-right: 6px;
+}
+
+.risk-scale-block__scale {
+    height: 100%;
+    background: #FB7B7B;
+    border-radius: 4px;
+}
+
+.risk-scale-block__value {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #2B2B38;
+}
+
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    border-top: 1px solid #8E8E8E;
+    padding-top: 6px;
+    text-align: end;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: #8E8E8E;
+    margin-top: auto;
+}
+
 .mb-0 {
     margin-bottom: 0;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-14 {
+    margin-bottom: 14px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-18 {
+    margin-bottom: 18px;
 }
 
 .mb-20 {
     margin-bottom: 20px;
 }
 
+.mb-32 {
+    margin-bottom: 32px;
+}
+
 .red-text {
     color: #FB7B7B;
+}
+
+.flex {
+    display: flex;
 }

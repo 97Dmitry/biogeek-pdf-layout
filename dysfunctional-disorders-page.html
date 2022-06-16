@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header mb-20">
+      <span>Оценка лабораторных показателей</span>
+      <span> | ${username}</span>
+      <span> | Дата: ${createdDate}</span>
+      <span> | Biogeek.health</span>
+    </header>
+
+    <main>
+      <div class="page-title">Оценка наличия дисфункциональных расстройств методом Biogeek</div>
+
+      <div class="card mb-32">
+        <div class="card-text">Шкала рисков поможет оценить наличие дисфункциональных расстройств. С помощью данной
+          шкалы Вы сможете увидеть вероятность развития различных дисфункций органов и систем органов. Зеленый и желтый
+          цвет шкал говорят о низком и умеренном риске развития дисфункции, либо о недостаточной информации для
+          выставления риска. Для более точных показателей системы рисковых шкал мы рекомендуем внести больше данных
+          биомаркеров. Система рисковых шкал является разработкой компании Biogeek.
+        </div>
+      </div>
+
+      <div class="page-subtitle">Дисфункции</div>
+      <div class="page-subtitle__label">Гипохлоргидрия</div>
+
+      <div class="assessment-card">
+        <div class="mb-16">
+          <div class="assessment-card__title">Повышенный гемоглобин</div>
+          <div class="card-text mb-16">Повышенный гемоглобин (эритроцитоз) – увеличение содержания красных клеток в
+            единице
+            объема крови, сопровождающееся повышением уровня гемоглобина. Основными симптомами этих изменений являются
+            головные, мышечные боли, головокружение, носовые кровотечения, быстрая утомляемость, специфические симптомы
+            зависят от соответствующего заболевания.
+          </div>
+
+          <div class="assessment-card__title">Общий белок повышен</div>
+          <div class="text-with-point">Повышение уровня сывороточного белка (&gt; 7,4) с большей вероятностью будет
+            связано с увеличением фракции глобулина, чем с уровнем альбумина, если только не происходитобезвоживание,
+            вызывающее относительное увеличение альбумина.
+          </div>
+          <div class="text-with-point">Дегидратация</div>
+          <div class="text-with-point">Дисфункция печени / желчевыводящих путей</div>
+        </div>
+        <div class="risk-scale-block">
+          <div class="risk-scale-block__text">
+            Шкала риска
+          </div>
+          <div class="risk-scale-block__scale-block">
+            <div class="risk-scale-block__scale" style="width: 70%"></div>
+          </div>
+          <div class="risk-scale-block__value">7 / 10</div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">${page}</footer>
+
+  </div>
+</body>
+</html>
