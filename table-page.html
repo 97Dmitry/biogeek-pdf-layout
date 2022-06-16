@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header mb-20">
+      <span>Оценка лабораторных показателей</span>
+      <span> | ${username}</span>
+      <span> | Дата: ${createdDate}</span>
+      <span> | Biogeek.health</span>
+    </header>
+
+    <div class="table-page-title">Таблица лабораторных показателей крови</div>
+
+    <div class="table-description__container">
+      <div class="table-description__point">
+        В данной таблице приведены показатели Вашей крови в определенных временных интервалах
+      </div>
+      <div class="table-description__point">
+        <span class="red-text">Красным</span> выделены значения биомаркеров, выходящие за пределы оптимальных норм
+      </div>
+      <div class="table-description__point">
+        Оптимальные нормы показателей крови составлены в соответствии с актуальными референсами по последним научным
+        показателям Biogeek
+      </div>
+    </div>
+
+    <table class="table">
+      <thead class="table-head">
+        <tr class="table-head__row">
+          <td class="table-head__row__text" style="padding: 0 13px; width: 152px;">Биомаркер</td>
+          <td class="table-head__row__text">Предыдущ. значение</td>
+          <td class="table-head__row__text">Текущее значение</td>
+          <td class="table-head__row__text">Измен.</td>
+          <td class="table-head__row__text">Оптим. значения</td>
+          <td class="table-head__row__text">Конвенц. значения</td>
+          <td class="table-head__row__text">Единицы</td>
+        </tr>
+      </thead>
+      <tbody class="table-body">
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гемоглобин (HGB)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-up.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гематокрит (HCT)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-up.svg" alt=""></td>
+
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гемоглобин (HGB)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-up.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гематокрит (HCT)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-up.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гемоглобин (HGB)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гематокрит (HCT)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гемоглобин (HGB)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гематокрит (HCT)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гемоглобин (HGB)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-up.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гематокрит (HCT)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гемоглобин (HGB)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-up.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">Гематокрит (HCT)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+        <tr class="table-body__row">
+          <td class="table-body__row__text">СОЭ (по Вестергрену) (ESR)</td>
+          <td class="table-body__row__text table-body__row__text-positive">140</td>
+          <td class="table-body__row__text table-body__row__text-negative">110</td>
+          <td class="table-body__row__text"><img src="images/red-arrow-down.svg" alt=""></td>
+
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">137 - 171</td>
+          <td class="table-body__row__text">г/дл</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="table-footnote">* Результат, выходящий за пределы нормы</div>
+
+    <footer></footer>
+
+  </div>
+
+</body>
+</html>
