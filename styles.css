@@ -615,3 +615,7 @@ table {
 .flex {
     display: flex;
 }
+
+.link {
+    text-decoration: none;
+}
